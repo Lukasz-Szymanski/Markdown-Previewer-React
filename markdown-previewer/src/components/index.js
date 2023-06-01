@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { marked } from "marked";
+import "./style.css";
 
 const MarkdownPreveiwer = () => {
   const [markdown, setMarkdown] = useState("");
@@ -34,7 +35,7 @@ const MarkdownPreveiwer = () => {
   };
 
   return (
-    <div>
+    <div className="root">
       <textarea id="editor" value={markdown} onChange={handleChange} />
 
       <div id="preview" dangerouslySetInnerHTML={getMarkdownHTML()} />

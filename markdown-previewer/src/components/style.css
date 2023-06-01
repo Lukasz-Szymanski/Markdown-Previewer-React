@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#editor {
+  margin: 10px;
+  width: 30rem;
+  height: 15rem;
+  margin: 2rem 0 5rem 0;
+}
+#preview {
+  width: 90%;
+  height: 100%;
+}
